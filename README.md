@@ -1,7 +1,7 @@
 # Using VM-Series and Azure Application Gateway to Secure Internet facing web workloads
 This ARM template deploys two VM-Series firewalls between a pair of Azure load balancers. The external load balancer is an Azure Application Gateway which is a web load balancer that also serves as the Internet facing gateway receiving traffic and distributing it to the VM-Series VMs. The firewall then applies your security policy protecting your deployment and then sends allowed traffic to the internal load balancer which is an Azure Load Balancer (layer 4) that load balances across a pair of sample Apache web servers. 
 
-As demand for your web services increase, you can add more web servers and deploy additional VM-Series firewalls for more capacity. Each tier, the VM-Series firewalls and web servers, are deployed in separate Availability Sets for higher availability and redundancy against planned and unplanned outages. Refer to Azure documentation for more information on [Availability Sets] (https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-manage-availability). A sample configuration file for VM-Series firewall is also included. After you import this configuration file, be sure to (a) customize the security policies to your needs and (b) <b>set a custom password</b> for the firewall instead of the value in the sample file. 
+As demand for your web services increase, you can add more web servers and deploy additional VM-Series firewalls for more capacity. Each tier, the VM-Series firewalls and web servers, are deployed in separate Availability Sets for higher availability and redundancy against planned and unplanned outages. Refer to Azure documentation for more information on [Availability Sets] (https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-linux-manage-availability). A sample configuration file for VM-Series firewall is also included. After you import this configuration file, be sure to (a) customize the security policies to your needs and (b) <b>set a custom password</b> for the firewall instead of the value in the sample file. Refer to documentation for steps on how to import the sample configuration file. 
 
 **Support Policy**
 
@@ -11,4 +11,6 @@ This project is released under the official support policy of Palo Alto Networks
 Only projects explicitly tagged with "Supported" information are officially supported. Unless explicitly tagged, all projects or work posted in our [GitHub repository] (https://github.com/PaloAltoNetworks) or sites other than our official [Downloads page] (https://support.paloaltonetworks.com/) are provided under the best effort policy.
  
 **Documentation**
+To Be Added
+
 [<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPaloAltoNetworks%2Fazure-load-balancer2%2Fmaster%2Fazuredeploy.json)
